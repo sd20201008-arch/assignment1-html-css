@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background-color: #f4f6f8;
+        }
+
+        .internal-demo {
+            font-family: Georgia, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navigation">
+            <a href="#about">About</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <h1 id="main-heading">Danial's Student Portfolio</h1>
+        <p class="tagline">Learning. Building. Improving.</p>
+    </div>
+
+    <div class="main-content">
+
+        <section id="about" class="card">
+            <h2 id="TegInAbout">About Me</h2>
+
+            <div class="profile-area">
+                <img src="photo1.jpg" alt="My photo" class="profile-photo">
+
+                <div>
+                    <h3>Hi, I'm Danial</h3>
+
+                    <p style="color: #2563eb;">
+                        I am a university student interested in programming,
+                        technology, fitness and personal development.
+                    </p>
+
+                    <p class="internal-demo">
+                        I enjoy learning new technologies and improving my skills
+                        through practical projects.
+                    </p>
+
+                    <p class="highlight">
+                        My goal is to become a strong software developer and
+                        continue developing both technical and creative skills.
+                    </p>
+                </div>
+            </div>
+
+            <button type="button" onclick="alert('Hello! Welcome to my webpage!')">
+                Click Me
+            </button>
+        </section>
+
+        <section id="hobbies" class="card">
+            <h2>My Hobbies</h2>
+
+            <ol>
+                <li>Gym and fitness</li>
+                <li>Programming</li>
+                <li>Playing guitar</li>
+            </ol>
+
+            <h3>Favorite Websites</h3>
+
+            <ul>
+                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>My Mood Today</h2>
+
+            <p class="mood">Today I feel 😎 motivated 💻 productive 🔥 and ready to learn!</p>
+        </section>
+
+        <section id="schedule" class="card">
+            <h2>Weekly Class Schedule</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Front-End Development</td>
+                        <td>Monday</td>
+                        <td>10:00</td>
+                    </tr>
+                    <tr>
+                        <td>Java / Advanced Programming</td>
+                        <td>Tuesday</td>
+                        <td>12:00</td>
+                    </tr>
+                    <tr>
+                        <td>Algorithms</td>
+                        <td>Wednesday</td>
+                        <td>14:00</td>
+                    </tr>
+                    <tr>
+                        <td>ICT / Database</td>
+                        <td>Thursday</td>
+                        <td>11:00</td>
+                    </tr>
+                    <tr>
+                        <td>Software Design Patterns</td>
+                        <td>Friday</td>
+                        <td>13:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card box-model-demo">
+            <h2>Box Model Demo</h2>
+            <p>This block demonstrates margin, padding and border.</p>
+        </section>
+
+        <section class="card positioning-demo">
+            <h2>CSS Positioning</h2>
+
+            <div class="position-container">
+                <div class="position-box static-box">Static</div>
+                <div class="position-box relative-box">Relative</div>
+                <div class="position-box absolute-box">Absolute</div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="sizing-heading">CSS Sizing Units</h2>
+            <p class="rem-text">This text uses rem.</p>
+            <p class="em-text">This text uses em.</p>
+            <div class="percentage-box">This box uses 80% width.</div>
+            <img src="photo1.jpg" alt="Sizing example" class="sizing-image">
+        </section>
+
+        <section class="card float-demo">
+            <h2>Float and Clear</h2>
+            <div class="float-left">Float Left</div>
+            <div class="float-right">Float Right</div>
+            <div class="clear"></div>
+            <p>The clear property prevents the following content from being affected by floated elements.</p>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Form</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color" value="#0000ff">
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </div>
+
+    
+</body>
+</html>
